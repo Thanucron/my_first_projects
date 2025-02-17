@@ -3,7 +3,7 @@
 #include <cmath>
 using std::cout, std::cin, std::endl, std::string;
 
-void getTheValues() {
+void getTheValues() {           //std::tuple<long double, long double, long double>
     long double a,b,c;
     cout << "Put the length of the first side: ";
     cin >> a;
@@ -20,6 +20,7 @@ void getTheValues() {
             if (pow(a,2) == pow(b,2) + pow(c,2))
         }
     }
+    //return std::make_tuple(a,b,c);
 }
 
 void ifATriangle() {
@@ -33,7 +34,7 @@ void welcome() {
 int main() {
     getTheValues();
     welcome();
-
+    ifATriangle(getTheValues());
 
     return 0;
 }
