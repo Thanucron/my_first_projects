@@ -6,10 +6,9 @@ using std::cout, std::cin, std::endl, std::string;
 
 int main() {
 
-    int total = 4;
-    int second_num = 2;
-    total = pow(total,(1.0/second_num));
-    cout << total;
+    for (int i = 0;i<256;i++) {
+        cout << (char)i << i << '\t';
+    }
 
     return 0;
 }
