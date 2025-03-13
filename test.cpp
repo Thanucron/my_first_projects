@@ -4,11 +4,15 @@
 #include <cmath>
 using std::cout, std::cin, std::endl, std::string;
 
-int main() {
+int add() {
+    return 3.14;
+}
 
-    for (int i = 0;i<256;i++) {
-        cout << (char)i << i << '\t';
-    }
+int main() {
+    cout << add();
+    // for (int i = 0;i<256;i++) {
+    //     cout << (char)i << i << '\t';
+    // }
 
     return 0;
 }

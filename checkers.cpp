@@ -9,13 +9,18 @@ using std::cout, std::cin, std::endl, std::string;
 std::array<std::array<int, 8>, 8> generateGrid();
 void displayBoard(const std::array<std::array<int, 8>, 8> & board);
 
+
 int main() {
     int white_num = 4*3;
     int black_num = 4*3;
+    bool whites_move = true;
     auto board = generateGrid();
     displayBoard(board);
+    
     return 0;
 }
+
+
 
 std::array<std::array<int, 8>, 8> generateGrid() { // 0 -> not available, 1 -> not occupied, 2 -> white, 3 -> black
     const int length = 8;

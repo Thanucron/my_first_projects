@@ -13,7 +13,7 @@ int main() {
     char choice;
     double history {};
     // cout << "How can I make you happy today?: ";
-    cout << "Options: 'q' -> \"quit\"/'d' -> \"deposit\"/'w' -> \"withdraw\": ";
+    cout << "Options: 'q' -> \"quit\"/\"'t' -> show balance/d' -> \"deposit\"/'w' -> \"withdraw\": ";
     cin >> choice;
     switch(choice) {
         case 'q':
